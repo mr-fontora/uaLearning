@@ -5,6 +5,29 @@
     height: 44px;
     margin-right: 10px;
 }
+
+.owl-carousel.header-carousel .owl-nav{
+    position: absolute;
+    padding-inline: 20px;
+    right: 0;
+    width: 100%;
+}
+
+.owl-carousel.header-carousel .owl-nav .owl-next{
+    position: absolute;
+    align-self: flex-end;
+    top: 0;
+}
+
+/********** For mobile formats **********/
+/* hides carousel arrows */
+@media (max-width: 767px) {
+    .owl-carousel.header-carousel .owl-nav {
+        display: none;
+    }
+}
+/********** For mobile formats **********/
+
 /********** Custom CSS **********/
 /********** Template CSS **********/
 :root {
