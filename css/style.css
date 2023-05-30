@@ -6,6 +6,18 @@
     margin-right: 10px;
 }
 
+/* Set the maximum height of the carousel to the height of the viewport */
+/* Hide any overflow content */
+.header-carousel {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+/* Set the height of each carousel item to 100% */
+.owl-carousel-item {
+    height: 100%;
+}
+
 .owl-carousel.header-carousel .owl-nav{
     position: absolute;
     padding-inline: 20px;
