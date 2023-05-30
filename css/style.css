@@ -52,11 +52,7 @@
 :root {
     --primary: #91D604;
     --light: #F0FBFC;
-    --dark: #181d38;
-    --main: #91D604;
-    --main_light: #A4EB04;
-    --main_light_2: #AEF504;
-    --main_dark: #70a602;
+    --dark: #000000;
 }
 
 .fw-medium {
