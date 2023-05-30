@@ -6,6 +6,10 @@
     margin-right: 10px;
 }
 
+.join-us{
+    top: 100px;
+}
+
 /* Set the maximum height of the carousel to the height of the viewport */
 /* Hide any overflow content */
 .header-carousel {
