@@ -415,9 +415,83 @@
     height: 15px;
     border: 1px solid #CCCCCC;
     transition: .5s;
+    border-radius: 100px;
 }
 
 .testimonial-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/*** Courses carousel ***/
+.courses-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+.courses-carousel::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .courses-carousel::before,
+    .courses-carousel::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .courses-carousel::before,
+    .courses-carousel::after {
+        width: 300px;
+    }
+}
+
+.courses-carousel .owl-item .courses-text,
+.courses-carousel .owl-item.center .courses-text * {
+    transition: .5s;
+}
+
+.courses-carousel .owl-item.center .courses-text {
+    background: var(--primary) !important;
+}
+
+.courses-carousel .owl-item.center .courses-text * {
+    color: #FFFFFF !important;
+}
+
+.courses-carousel .owl-dots {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.courses-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 100px;
+    transition: .5s;
+}
+
+.courses-carousel .owl-dot.active {
     background: var(--primary);
     border-color: var(--primary);
 }
