@@ -1,4 +1,7 @@
 /********** Custom CSS **********/
+.back-to-top-arrow{
+    font-size: 2rem;
+}
 
 .ua-logo-icon {
     width: 44px;
@@ -68,7 +71,7 @@
     position: fixed;
     display: none;
     right: 45px;
-    bottom: 45px;
+    bottom: 80px;
     z-index: 99;
 }
 
