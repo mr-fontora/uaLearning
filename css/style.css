@@ -331,6 +331,7 @@
 /*** Categories & Courses ***/
 .category img,
 .course-item img {
+    height: 250px;
     transition: .5s;
 }
 
