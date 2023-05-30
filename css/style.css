@@ -229,15 +229,14 @@
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
     margin: 7px 0;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     background: transparent;
-    border: 1px solid #FFFFFF;
-    font-size: 22px;
+    font-size: 40px;
     transition: .5s;
 }
 
