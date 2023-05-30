@@ -324,16 +324,35 @@
                             <input type="email" class="form-control" id="email" placeholder="Indica o teu email">
                         </div>
                         <div class="mb-3">
-                            <label for="message" class="form-label">Curso pretendido (colocar aqui dropdown)</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Indica o curso pretendido"></textarea>
+                            <label for="course" class="form-label">Curso pretendido</label>
+                            <select class="form-control" id="course">
+                                <option value="eletronics">Eletrónica</option>
+                                <option value="software">Engenharia de Software</option>
+                                <option value="data-engineering">Engenharia de Dados</option>
+                            </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- Contact Form Modal -->
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Obrigado pelo teu contato! Recebemos com sucesso as tuas informações e iremos entrar em contato em breve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Success Modal -->
 
     <!-- Join us -->
     <div class="fixed-top d-flex justify-content-end join-us">
