@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -44,9 +45,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="contact.html" class="nav-item nav-link">Contactos</a>
-            <a href="personal-area.html" class="nav-item nav-link"><i class="fa fa-solid fa-user"></i></a>
-            <a href="index.html" class="nav-item nav-link active"><i class="fa fa-solid fa-right-from-bracket"></i></a>
+            <a href="index.html" class="nav-item nav-link"><i class="fa fa-solid fa-right-from-bracket"></i> Terminar sessão</a>
         </div>
     </div>
 </nav>
@@ -64,288 +63,127 @@
 </div>
 <!-- Header End -->
 
-<!-- Categories Start -->
-<div class="container-xxl py-5 category">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Categorias</h6>
-            <h1 class="mb-5"></h1>
+<!-- Personal details Start -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="img/team-3.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
+            <h3>Jorge Pereira</h3>
+            <p>Engenheiro Eletrotécnico</p>
         </div>
-        <div class="row g-3">
-            <div class="col-lg-7 col-md-6">
-                <div class="row g-3">
-                    <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                        <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="img/eci.jpg" alt="">
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0" style="color: black">Engenharia de Computadores e Informática</h5>
-                                <small class="text-primary">41 Cursos</small>
+        <div class="col-md-10 p-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item col">
+                    <a class="nav-link active" id="content-tab" data-bs-toggle="tab" href="#content" role="tab" aria-controls="content" aria-selected="true">Cursos</a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" id="graphs-tab" data-bs-toggle="tab" href="#graphs" role="tab" aria-controls="graphs" aria-selected="false">Estatísticas</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3">
+                <div class="tab-pane fade show active" id="content" role="tabpanel" aria-labelledby="content-tab">
+                    <div class="row">
+                        <div class="courses-container">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="courses-item text-center">
+                                                <div class="course-item bg-light">
+                                                    <div class="position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="https://circuitdigest.com/sites/default/files/projectimage_tut/Getting-Started-with-Simulink-in-MATLAB.png" alt="">
+                                                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                                            <a href="" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;">Abrir</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center p-4 pb-0">
+                                                        <h5 class="mb-4">MATLAB & Simulink Aplicado ao Sistema Elétrico de Potência</h5>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex border-top">
+                                                        <small class="flex-fill text-center py-2"><i class="fa fa-user-tie text-primary me-2"></i>Ricardo Sá</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="courses-item text-center">
+                                                <div class="course-item bg-light">
+                                                    <div class="position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="https://www.anossaescola.com/wp-content/uploads/2018/04/CAPA-DO-CURSO-DE-REDES.jpg" alt="">
+                                                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                                            <a href="" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;">Abrir</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center p-4 pb-0">
+                                                        <h5 class="mb-4">Redes de computadores para iniciantes</h5>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex border-top">
+                                                        <small class="flex-fill text-center py-2"><i class="fa fa-user-tie text-primary me-2"></i>Paulo Salvador</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                        <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="img/ee.jpg" alt="">
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0" style="color: black">Engenharia Eletrónica</h5>
-                                <small class="text-primary">35 Cursos</small>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="courses-item text-center">
+                                                <div class="course-item bg-light">
+                                                    <div class="position-relative overflow-hidden">
+                                                        <img class="img-fluid" src="https://images.unsplash.com/photo-1559819614-81fea9efd090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                                                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                                            <a href="" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;">Abrir</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center p-4 pb-0">
+                                                        <h5 class="mb-4">Curso de Arduino - Do Básico ao Avançado</h5>
+                                                        <div class="progress mb-3">
+                                                            <div class="progress-bar" role="progressbar" style="width: 23%;" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100">23%</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex border-top">
+                                                        <small class="flex-fill text-center py-2"><i class="fa fa-user-tie text-primary me-2"></i>Ernesto Ventura</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                        <a class="position-relative d-block overflow-hidden" href="">
-                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                            <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                <h5 class="m-0" style="color: black">Engenharia Computacional</h5>
-                                <small class="text-primary">31 Cursos</small>
+
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 69%;" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">69%</div>
                             </div>
-                        </a>
+                            <p class="text-center">Progresso total</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                <a class="position-relative d-block h-100 overflow-hidden" href="">
-                    <img class="img-fluid position-absolute w-100 h-100" src="img/ds.jpg" alt="" style="object-fit: cover;">
-                    <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                        <h5 class="m-0" style="color: black">Ciência de Dados</h5>
-                        <small class="text-primary">21 Cursos</small>
-                    </div>
-                </a>
+                <div class="tab-pane fade" id="graphs" role="tabpanel" aria-labelledby="graphs-tab">
+
+                    <canvas id="courseCompletionChart" width="300" height="150"></canvas>
+                    <canvas id="progressOverTimeChart" width="300" height="150"></canvas>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Categories Start -->
-
-<!-- Courses Start -->
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="text-center">
-            <h6 class="section-title bg-white text-center text-primary px-3">Cursos</h6>
-            <h1 class="mb-5">Cursos Populares</h1>
-        </div>
-        <div class="owl-carousel courses-carousel position-relative">
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://www.anossaescola.com/wp-content/uploads/2018/04/CAPA-DO-CURSO-DE-REDES.jpg" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€14.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">Redes de computadores para iniciantes</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Paulo Salvador</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>5.49 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>132 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€19.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">Curso básico - Introdução ao Linux Ubuntu 20.04</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Adrego da Rocha</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>12.56 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>204 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1559819614-81fea9efd090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€12.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">Curso de Arduino - Do Básico ao Avançado</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Ernesto Ventura</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>4.36 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>115 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://blogs.solidworks.com/solidworksbrasil/wp-content/uploads/sites/8/6a00d83451706569e201538ee12959970b.png" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€28.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">Curso avançado - Design em SolidWorks</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>André Narciso</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>35.00 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>210 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://circuitdigest.com/sites/default/files/projectimage_tut/Getting-Started-with-Simulink-in-MATLAB.png" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€14.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">MATLAB & Simulink Aplicado ao Sistema Elétrico de Potência</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Ricardo Sá</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>3.26 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>270 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://i.ytimg.com/vi/N6ZE_NqCpK0/maxresdefault.jpg" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€26.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">Introdução ao software Comsol Multiphysics</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>José Fonte</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>30.23 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>242 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:1400/0*eSStoMB3wTudemwQ.png" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€19.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">Guia prático de SQL para Ciência de Dados</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Luis Bastião</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>9.39 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>49 Students</small>
-                    </div>
-                </div>
-            </div>
-            <div class="courses-item text-center">
-                <div class="course-item bg-light">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="https://datascientest.com/en/wp-content/uploads/sites/9/2023/03/illu_numpy_blog-125.png" alt="">
-                        <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#contactModal">Inscrever</a>
-                        </div>
-                    </div>
-                    <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">€54.99</h3>
-                        <div class="mb-3">
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small class="fa fa-star text-primary"></small>
-                            <small>(123)</small>
-                        </div>
-                        <h5 class="mb-4">NumPy Python - Tudo sobre a Biblioteca</h5>
-                    </div>
-                    <div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Rafael Santos</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>7.29 Hrs</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>144 Students</small>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- Courses End -->
+<!-- Personal details End -->
 
 
 <!-- Footer Start -->
@@ -376,6 +214,56 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+<script>
+    const weekLabels = ['semana 1', 'semana 2', 'semana 3', 'semana 4', 'semana 5'];
+    const timeData = [2, 3, 2, 4, 3];
+    const progressData = [0, 13, 30, 35, 53];
+
+    // Bar chart
+    const barChart = new Chart(document.getElementById('courseCompletionChart'), {
+        type: 'bar',
+        data: {
+            labels: weekLabels,
+            datasets: [{
+                label: 'Numero de horas de formação semanais',
+                data: timeData,
+                backgroundColor: '#91D604'
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 5
+                }
+            }
+        }
+    });
+
+    // Line chart
+    const lineChart = new Chart(document.getElementById('progressOverTimeChart'), {
+        type: 'line',
+        data: {
+            labels: weekLabels,
+            datasets: [{
+                label: 'Percentagem de curso completa',
+                data: progressData,
+                borderColor: '#91D604',
+                fill: false
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100
+                }
+            }
+        }
+    });
+</script>
 </body>
 
 </html>

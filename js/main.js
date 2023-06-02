@@ -127,5 +127,16 @@
         }
     });
 
+    // Contact form
+    $('#contactModal').submit(function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Close the login modal
+        $('#contactModal').modal('hide');
+
+        // Show the success modal
+        $('#successModal').modal('show');
+    });
+
 })(jQuery);
 

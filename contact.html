@@ -47,6 +47,7 @@
             <a href="index.html" class="nav-item nav-link">Início</a>
             <a href="courses.html" class="nav-item nav-link">Cursos</a>
             <a href="contact.html" class="nav-item nav-link active">Contactos</a>
+            <a class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#LoginModal"><i class="fa fa-solid fa-user"></i> Iniciar sessão</a>
         </div>
     </div>
 </nav>
@@ -118,28 +119,109 @@
     </div>
     <!-- Contact End -->
 
+    <!-- Contact Form Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Formulário de contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Indica o teu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Indica o teu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="course" class="form-label">Categoria pretendida</label>
+                            <select class="form-control" id="course">
+                                <option value="eletronics">Engenharia de Computadores e Informática</option>
+                                <option value="software">Engenharia Eletrónica</option>
+                                <option value="data-engineering">Engenharia Computacional</option>
+                                <option value="data-engineering">Ciência de Dados</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#successModal">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form Modal -->
+
+    <!-- Login Form Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Entra no teu perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="login_email" placeholder="Indica o teu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="login_name" placeholder="Insere a tua senha">
+                        </div>
+                        <div class="text-end">
+                            <a class="btn btn-primary" href="personal-area.html">Iniciar sessão</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Form Modal -->
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Obrigado pelo teu contato! Recebemos com sucesso as tuas informações e iremos entrar em contato em breve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Success Modal -->
+
     <!-- Join us -->
     <div class="fixed-top d-flex justify-content-end join-us">
-        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal">Junta-te agora!<i class="fa fa-arrow-right ms-3"></i></a>
+        <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal"
+           data-bs-target="#contactModal">Junta-te agora!<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
     <!-- Join us -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
-    <div class="copyright">
-        <div class="row">
-            <div class="text-center text-md-center">
-                &copy; <a href="#">uaLearning</a>, 2023, Todos os direitos reservados.
-                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+        <div class="copyright">
+            <div class="row">
+                <div class="text-center text-md-center">
+                    &copy; <a href="#">uaLearning</a>, 2023, Todos os direitos reservados.
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a class="back-to-top" href="#"><i class="bi bi-arrow-up back-to-top-arrow"></i></a>
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up back-to-top-arrow"></i></a>
     <!-- Back to Top -->
 
     <!-- JavaScript Libraries -->
